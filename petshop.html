@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Amigão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+        }
+        .intro img {
+            width: 100%;
+            height: auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .products, .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .products .item, .services .item {
+            flex: 1 1 calc(33% - 20px);
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .products .item:hover, .services .item:hover {
+            transform: scale(1.05);
+        }
+        .products .item img, .services .item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Pet Shop Amigão</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio" class="intro">
+            <h2>Seu pet em boas mãos!</h2>
+            <img src="Imagem.jpg1" alt="Imagem de pets felizes">
+            <p>Oferecemos os melhores serviços para o seu pet com carinho e dedicação.</p>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="item">
+                <img src="imagem.jpg2" alt="Banho e Tosa">
+                <h3>Banho e Tosa</h3>
+                <p>Deixe seu pet limpinho e cheiroso com nossos serviços de banho e tosa. </p>
+				 <h3>Preço R$50.00</h3>
+            </div>
+            <div class="item">
+                <img src="Imagem.jpg3" alt="Veterinário">
+                <h3>Veterinário</h3>
+                <p>Cuide da saúde do seu pet com nossa equipe de veterinários especializados.<br>
+			      <h3>Preço R$100.00</h3>
+            </div>
+            <div class="item">
+                <img src="imagem.jpg4" alt="Hotel para Pets">
+                <h3>Hotel para Pets</h3>
+                <p>Viaje tranquilo sabendo que seu pet está em boas mãos no nosso hotel.</p>
+                  <h3>Preço R$200.00</h3>
+			</div>
+        </section>
+
+        <section id="produtos" class="products">
+            <h2>Nossos Produtos</h2>
+            <div class="item">
+                <img src="racao.jpg" alt="Ração Premium">
+                <h3>Ração Premium</h3>
+                <p>Ofereça a melhor nutrição para seu pet com nossa linha de rações premium.</p>
+                  <h3>Preço R$40.00</h3>
+			 </div>
+            <div class="item">
+                <img src="imagem.jpg5" alt="Brinquedos">
+                <h3>Brinquedos</h3>
+                <p>Divirta seu pet com nossos brinquedos seguros e duráveis.</p>
+                  <h3>Preço R$15.00</h3>
+			</div>
+            <div class="item">
+                <img src="img.jpg21" alt="Acessórios">
+                <h3>Acessórios</h3>
+                <p>Encontre coleiras, roupas, e outros acessórios para seu pet.</p>
+				 <h3>Preço R$40.00</h3>
+				
+            </div>
+        </section>
+    </div>
+
+    <footer id="contato">
+        <p>&copy; 2024 Pet Shop Amigão. Todos os direitos reservados. | <a href="mailto:contato@petshopamigao.com">contato@petshopamigao.com</a></p>
+    </footer>
+
+</body>
+</html>
